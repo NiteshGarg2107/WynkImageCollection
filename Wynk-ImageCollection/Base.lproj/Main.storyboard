@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TwL-7k-2lP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gallery Collection View Control-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GalleryCollectionViewControl" customModule="Wynk_ImageCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="77k-g0-A0O" customClass="ModernSearchBar" customModule="ModernSearchBar">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcY-Kh-dxw">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hcY-Kh-dxw" secondAttribute="bottom" id="8Ac-es-z4l"/>
+                            <constraint firstItem="hcY-Kh-dxw" firstAttribute="top" secondItem="77k-g0-A0O" secondAttribute="bottom" symbolic="YES" id="AtO-rx-oyY"/>
+                            <constraint firstItem="hcY-Kh-dxw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QKM-On-VQy"/>
+                            <constraint firstItem="77k-g0-A0O" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XWn-4Y-vfp"/>
+                            <constraint firstItem="77k-g0-A0O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e90-j4-C8x"/>
+                            <constraint firstItem="77k-g0-A0O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xEq-5y-xd0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hcY-Kh-dxw" secondAttribute="trailing" id="zBu-Fg-PjS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cDh-fq-OZ9"/>
+                    <connections>
+                        <outlet property="listContainer" destination="hcY-Kh-dxw" id="Nsv-OQ-0hI"/>
+                        <outlet property="searchBar" destination="77k-g0-A0O" id="N9Z-vM-Vpz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+        </scene>
+        <!--Gallery Full Image Control-->
+        <scene sceneID="ZFC-CJ-1Fu">
+            <objects>
+                <viewController storyboardIdentifier="GalleryFullImageControl" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rGx-P3-Tgg" customClass="GalleryFullImageControl" customModule="Wynk_ImageCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ac-t4-Pnf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zX7-ZK-wtw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mlk-dq-Rdb" firstAttribute="bottom" secondItem="zX7-ZK-wtw" secondAttribute="bottom" id="ILz-PI-8iJ"/>
+                            <constraint firstItem="zX7-ZK-wtw" firstAttribute="leading" secondItem="Mlk-dq-Rdb" secondAttribute="leading" id="J1E-L5-mmh"/>
+                            <constraint firstItem="Mlk-dq-Rdb" firstAttribute="trailing" secondItem="zX7-ZK-wtw" secondAttribute="trailing" id="pp8-Ow-Duz"/>
+                            <constraint firstItem="zX7-ZK-wtw" firstAttribute="top" secondItem="Mlk-dq-Rdb" secondAttribute="top" id="qg4-ob-vT7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mlk-dq-Rdb"/>
+                    </view>
+                    <connections>
+                        <outlet property="listContainer" destination="zX7-ZK-wtw" id="YYN-cT-Sho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEt-DZ-ivE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2106" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GoP-T5-Rob">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TwL-7k-2lP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1bh-ei-kSb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z7Y-kn-cVj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLM-bc-OwR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>

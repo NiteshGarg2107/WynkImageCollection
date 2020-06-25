@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1C49AEA4-CF68-44BD-B59F-390B56FACF47"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1CA74B36-DF3B-4528-B0AD-ECDF81E67B7E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/ViewModels/ListViewModels/GalleryCollectionListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "getGalleryData(parameters:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1CA74B36-DF3B-4528-B0AD-ECDF81E67B7E - 32189431663dd63f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Wynk_ImageCollection.GalleryCollectionListViewModel.getGalleryData(parameters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, completion: (Wynk_ImageCollection.Response&lt;Swift.Array&lt;Wynk_ImageCollection.GalleryData&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Wynk-ImageCollection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/niteshgarg/Desktop/Wynk/Wynk-ImageCollection/Sources/ViewModels/ListViewModels/GalleryCollectionListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "1CA74B36-DF3B-4528-B0AD-ECDF81E67B7E - f28f7c9b518e9c3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Wynk_ImageCollection.ResultData&lt;Wynk_ImageCollection.Response&lt;Swift.Array&lt;Wynk_ImageCollection.GalleryData&gt;&gt;&gt;) -&gt; () in Wynk_ImageCollection.GalleryCollectionListViewModel.getGalleryData(parameters: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, completion: (Wynk_ImageCollection.Response&lt;Swift.Array&lt;Wynk_ImageCollection.GalleryData&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Wynk-ImageCollection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/niteshgarg/Desktop/Wynk/Wynk-ImageCollection/Sources/ViewModels/ListViewModels/GalleryCollectionListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "167">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F2F90D2-4C90-478D-99A3-1770036A9DF3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/Controls/CollectionListControl/GalleryCollectionListControl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
